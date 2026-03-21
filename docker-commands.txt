@@ -1,0 +1,7 @@
+docker ps => This lists all the running containers in local machine
+docker images => This lists all the images we built which we have locally
+docker build -t express-demo-app . => This command builds a docker images from the Dockerfile present in current directory
+docker run -d -e APP_HOST=0.0.0.0 -e APP_PORT=8888 -p 8888:8888 5248d5b42459 => To run a docker container
+docker stop fb581c50f38b => To stop a container
+docker exec -it fb581c50f38b sh => Attach to terminal inside the container
+docker logs fb581c50f38b => Get container logs
